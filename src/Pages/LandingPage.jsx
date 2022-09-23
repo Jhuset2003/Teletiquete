@@ -19,9 +19,6 @@ export const LandingPage = () => {
           </MarginLayout>
           <div className='figure_container' />
       </section>
-      <section className="info">
-
-      </section>
     </div>
   )
 }
