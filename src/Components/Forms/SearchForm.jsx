@@ -18,10 +18,13 @@ export const SearchForm = () => {
                     <h3>Empresa</h3>
                     <input type="text" placeholder='Empresa'/>
                 </li>
-                <li className='input_date'>
+                <li className='input_date_container'>
                     <h3>Fechas</h3>
-                    <input type="date" />
-                    <input type="date" />
+                    <div className='input_date'>
+                        <input type="date" />
+                        <input type="date" />
+                    </div>
+                    
                 </li>    
             </ul>
             <div className='input_submit_container'>

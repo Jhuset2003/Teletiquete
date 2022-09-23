@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 85%;
+    width: 80%;
     border-radius: 10px;
     flex-wrap: wrap;
     overflow-x: scroll;
@@ -24,8 +24,10 @@
         gap: 30px; 
         margin: 5px;
         flex-wrap: wrap;
-        height: calc(35rem - 30vw);
-       
+        height: calc(30rem - 25vw);
+       h3{
+        font-size: 0.8rem;
+       }
         
         .input_text{
             display: flex;
@@ -33,7 +35,7 @@
             flex-wrap: wrap;
             margin: 5px;
             input{
-                width: 13rem;
+                width: 8rem;
                 border: none;
                 border-bottom: 3px solid transparent;
                 border-image: V.$gradiant;
@@ -44,8 +46,44 @@
                     border-image: V.$primary;
                     
                 }
+                &::placeholder{
+                    font-size: 0.7rem;
+                }
             }
         } 
+        .input_date_container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+            gap: 10px;
+            margin: 5px;
+            .input_date{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                input{
+                   border: none;
+                   border-bottom: 3px solid transparent;
+                   border-image:V.$gradiant ;
+                   border-image-slice:1 ;
+                   margin: 5px;
+                   &[type="date"]::-webkit-calendar-picker-indicator {
+                    
+                    margin-left: -10px;
+                    font-size: 20px;
+
+                  }
+                &:focus{
+                    outline: none;
+                }
+                    
+                }
+            }
+            
+            
+        }
     }
     .input_submit_container{
         width: 100%;
@@ -53,11 +91,11 @@
         justify-content: center;
         .input_submit{
             border: none;
-            width: 190px;
-            height: 60px;
+            width: 150px;
+            height: 45px;
             background-color: black;
             color: V.$primary;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: V.$subtitle;
             border-radius: 10px;
             margin-bottom: 10px;
