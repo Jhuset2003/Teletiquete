@@ -1,0 +1,68 @@
+@use '../../App.scss' as V;
+.search_form {
+    li{
+        list-style: none;
+    }
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+   
+    .container_input_list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+        margin: 5px;
+        flex-wrap: wrap;
+        height: calc(35rem - 30vw);
+       
+        
+        .input_text{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 5px;
+            input{
+                width: 13rem;
+                border: none;
+                border-bottom: 3px solid transparent;
+                border-image: V.$gradiant;
+                border-image-slice: 1;
+                height: 30px;
+                &:focus{
+                    outline: none;
+                    border-image: V.$primary;
+                    
+                }
+            }
+        } 
+    }
+    .input_submit_container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .input_submit{
+            border: none;
+            width: 190px;
+            height: 60px;
+            background-color: black;
+            color: V.$primary;
+            font-size: 20px;
+            font-weight: V.$subtitle;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+
+}
