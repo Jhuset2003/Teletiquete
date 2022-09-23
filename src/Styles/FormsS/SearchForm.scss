@@ -7,7 +7,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
+    box-shadow: 0px 0px 0px 20px rgba(255, 255, 255, 0.527);
     border-radius: 10px;
     flex-wrap: wrap;
     overflow-x: scroll;
@@ -26,7 +27,7 @@
         flex-wrap: wrap;
         height: calc(30rem - 25vw);
        h3{
-        font-size: 0.8rem;
+        font-size: 1rem;
        }
         
         .input_text{
@@ -35,7 +36,7 @@
             flex-wrap: wrap;
             margin: 5px;
             input{
-                width: 8rem;
+                width: 9rem;
                 border: none;
                 border-bottom: 3px solid transparent;
                 border-image: V.$gradiant;
@@ -47,7 +48,7 @@
                     
                 }
                 &::placeholder{
-                    font-size: 0.7rem;
+                    font-size: 0.8rem;
                 }
             }
         } 
@@ -69,6 +70,7 @@
                    border-image:V.$gradiant ;
                    border-image-slice:1 ;
                    margin: 5px;
+                   font-weight: V.$subtitle;
                    &[type="date"]::-webkit-calendar-picker-indicator {
                     
                     margin-left: -10px;
@@ -99,6 +101,7 @@
             font-weight: V.$subtitle;
             border-radius: 10px;
             margin-bottom: 10px;
+            
         }
     }
     
