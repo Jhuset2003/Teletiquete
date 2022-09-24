@@ -3,7 +3,7 @@ import '../../Styles/FormsS/SearchForm.scss'
 
 export const SearchForm = () => {
   return (
-    <div className='form_container'>
+    <div className='form_seacrh_container'>
         <form className='search_form'>
             <ul className='container_input_list'>
                 <li className='input_text'>
