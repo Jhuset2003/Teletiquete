@@ -5,6 +5,7 @@ import {
   Route
   } from "react-router-dom";
 import { LandingPage } from './Pages/LandingPage';
+import History from './Pages/History';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<LandingPage/>} />
+          <Route path="/History" element={<History/>} />
         </Routes> 
 
       </BrowserRouter>

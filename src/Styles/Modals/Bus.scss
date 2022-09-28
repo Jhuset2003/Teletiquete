@@ -1,0 +1,10 @@
+@use "../../App.scss" as V ;
+
+.BusSteaps_container{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.612);
+    top: 0;
+    z-index: 10;
+}

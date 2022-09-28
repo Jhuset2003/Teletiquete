@@ -5,8 +5,7 @@ import "../../Styles/NavS/Nav.scss"
 
 
 import { CgMenu } from 'react-icons/cg';
-import { RiFolderUserFill } from 'react-icons/ri';
-import { FaWallet } from 'react-icons/fa';
+import { FaUserCircle,FaCoins } from 'react-icons/fa';
 import { ButtonsMenu } from '../Buttons/Buttons_Menu/ButtonsMenu';
 
 
@@ -22,24 +21,33 @@ export const Nav = () => {
     const items = [
         {
             id:1,
-            icon_menu:<RiFolderUserFill/>,  
+            icon_menu:<FaUserCircle/>,
+            title:"Informacion Usuario",  
             information:[
-                {id:1, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:1, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:1, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:1, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+            ],
+            actions:[
+                {actText:"Editar"},
+                {actText:"Historial"},
+                {actText:"Cerrar"},
             ]
         },
         {
             id:2,
-            icon_menu:<FaWallet/>,
+            icon_menu:<FaCoins/>,
+            title:"Monedero Virtual",
             information:[
-                {id:2, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:2, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:2, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
-                {id:2, infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Dinero",infoType:"number",infoText:1000},
+               
                 
-            ]  
+            ], 
+            actions:[
+                {actText:"Recargar"}
+            ]
+           
         }
     ]
 
