@@ -4,8 +4,9 @@ import {
   Routes,
   Route
   } from "react-router-dom";
-import { LandingPage } from './Pages/LandingPage';
+
 import History from './Pages/History';
+import { Home } from './Pages/Home';
 
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-          <Route path="/" element={<LandingPage/>} />
+          <Route path="/" element={<Home/>} />
           <Route path="/History" element={<History/>} />
         </Routes> 
 
