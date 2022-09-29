@@ -1,0 +1,18 @@
+@use "../../../App.scss" as V;
+.BtnHistory{
+    background-color: V.$secundary;
+    padding: 8px;
+    border-radius: 4px;
+    a{
+        text-decoration: none;
+        span{
+            font-weight: 700;
+            color: V.$Ctext;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+    }
+}

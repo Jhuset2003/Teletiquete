@@ -1,12 +1,13 @@
 import {React,useState} from 'react'
-import "../../../Styles/Buttons/Buttons_Menu/Buttons_Menu.scss";
+import "../../../Styles/Buttons/Buttons_Menu/Buttons_Menu_reactions.scss";
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { motion,useDragControls } from "framer-motion"
 
-export const ButtonsMenu = ({items = []}) => {
+export const ButtonsMenuActions = ({itemsA = []}) => {
     const [Info,setInfo] = useState(false);
     const [modalData, setModalData] = useState(null);
     const [Id_btn , setId_btn] = useState();
-
+    const controls = useDragControls()
 
     const clickHandler = () => {
         setInfo(true);
@@ -18,16 +19,25 @@ export const ButtonsMenu = ({items = []}) => {
   return (
     <>
         <div className='BTNSContainer'>
-            {items.map((item)=>{
+            {itemsA.map((itemA)=>{
                 return(
-                    <div className={`icons_menu ${Info && item.id === Id_btn ? "active" : "" }`} key={item.id} onClick={() => {clickHandler(true); setModalData(item); setId_btn(item.id)}}>
-                        {item.icon_menu}  
+                    <div className={`icons_menu2 ${Info && itemA.id === Id_btn ? "active" : "" }`} key={itemA.id} onClick={() => {clickHandler(true); setModalData(itemA); setId_btn(itemA.id)}}>
+                        {itemA.icon_menu}  
                     </div>
                 )
             })}
         </div>
         {Info &&
-                    <div className='information' key={modalData.id} >
+                    <motion.div className='information' key={modalData.id} 
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2 }}
+                    drag
+                    dragListener={true}
+                    dragControls={controls}
+                    dragElastic={0}
+                    dragMomentum={false}
+                    >
                         <div className='closeAndSee'>
                             <i className='see'>{modalData.icon_menu}</i>
                             <i className='close' onClick={closeHandler}><AiFillCloseCircle/></i>
@@ -45,15 +55,7 @@ export const ButtonsMenu = ({items = []}) => {
                                })}
                             </form>
                         </div>
-                        <div className='buttons_Info'>
-                            {modalData.actions.map((more,index)=>{
-                                return(
-                                    <button key={index}>{more.actText}</button>
-                                )
-                            })}
-                               
-                        </div>
-                    </div>
+                    </motion.div>
             
         }
             

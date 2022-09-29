@@ -4,22 +4,59 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
+    .icons_menu2{
+        font-size: calc((0.1rem + 0.1vw) + 3.1vh);
+        color: V.$Ctext;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
+    }
+    a{  
+        text-decoration: none;
+        .icons_menuL{
+            font-size: calc((0.1rem + 0.1vw) + 5vh);
+            color: V.$Ctext;
+            transition: 0.2s;
+            cursor: pointer;
+            &:hover{
+                color: black;
+            }
+        &.active{
+            color: V.$secundary;
+            &:hover{
+                color: V.$secundary;
+            }
+        }
+            
+        }
+    }
+    
     .icons_menu{
-        font-size: calc(30px + 1vw);
+        font-size: calc((0.1rem + 0.1vw) + 5vh);
         color: V.$Ctext;
         border-bottom: 3px solid transparent;
         border-image: V.$gradiant;
         border-image-slice: 1;
+        transition: 0.2s;
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }
     }
     .active{
         color: V.$secundary;
+        &:hover{
+            color: V.$secundary;
+        }
     }
 }
 .information{
     background-color: white;
     width: 220px;
     position: absolute;
-    right: -250px;
+    right: calc(-200px - 10vw);
     top: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -42,7 +79,12 @@
                  
             }
             .close{
-                color: red ;
+                color: V.$terceary ;
+                transition: 0.2s;
+                cursor: pointer;
+                &:hover{
+                    color: red;
+                }
                 svg{
                     background-color: white;
                     border-radius: 50%;

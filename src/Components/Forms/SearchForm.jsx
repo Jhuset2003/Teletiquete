@@ -8,9 +8,9 @@ export const SearchForm = () => {
    const initBusSteps = ()=>{
         setBusSteps(true)
    }
-   const stopBusSteps = ()=>{
-    setBusSteps(false)
-}
+   const closeBusSteps = ()=>{
+        setBusSteps(false)
+   }
 
 
   return (
@@ -46,7 +46,10 @@ export const SearchForm = () => {
         </form>
     </div>
     {BusSteps && 
-        <Bus close={stopBusSteps}/>
+        <>
+            <button onClick={closeBusSteps} style={{zIndex:11}}>Close</button>
+            <Bus/>
+        </>
     }
     </>
   )

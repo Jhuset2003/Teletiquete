@@ -2,11 +2,18 @@ import {React,useState} from 'react';
 import MarginLayout from '../../Layouts/MarginLayout';
 import log_teletiquete from "../../Resources/Logs/log_teletiquete.jpg";
 import "../../Styles/NavS/Nav.scss"
+import { motion } from "framer-motion"
 
 
 import { CgMenu } from 'react-icons/cg';
 import { FaUserCircle,FaCoins } from 'react-icons/fa';
-import { ButtonsMenu } from '../Buttons/Buttons_Menu/ButtonsMenu';
+import { AiFillHome } from 'react-icons/ai';
+
+
+import { ButtonsMenuReactions } from '../Buttons/Buttons_Menu/ButtonsMenuReactions';
+import { BtnHistory } from '../Buttons/Btn_menu/BtnHistory';
+import { ButtonsMenuActions } from '../Buttons/Buttons_Menu/ButtonsMenuActions';
+import { ButtonsMenuLinks } from '../Buttons/Buttons_Menu/ButtonsMenuLinks';
 
 
 export const Nav = () => {
@@ -30,9 +37,7 @@ export const Nav = () => {
                 {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
             ],
             actions:[
-                {actText:"Editar"},
-                {actText:"Historial"},
-                {actText:"Cerrar"},
+                {actText: <BtnHistory/>},
             ]
         },
         {
@@ -50,6 +55,44 @@ export const Nav = () => {
            
         }
     ]
+    const itemsA = [
+        {
+            id:1,
+            icon_menu:<FaUserCircle/>,
+            title:"Informacion Usuario",  
+            information:[
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+                {infoTitle:"Nombre",infoType:"text",infoText:"Albert"},
+            ],
+            
+        },
+        {
+            id:2,
+            icon_menu:<FaCoins/>,
+            title:"Monedero Virtual",
+            information:[
+                {infoTitle:"Dinero",infoType:"number",infoText:1000},
+               
+                
+            ], 
+           
+           
+        }
+    ]
+    const itemsL = [
+        {
+            id:1,
+            icon_menu:<AiFillHome/>,
+            link:"/",
+        },
+        {
+            id:2,
+            icon_menu:"",
+            link:"",
+        }
+    ]
 
   return (
     <>
@@ -65,20 +108,24 @@ export const Nav = () => {
             </div>
         </MarginLayout>
         {Menu &&
-        <div className='menu_container' >
+        <motion.div className='menu_container' 
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        transition={{duration:0.2}}
+        >
             <div className='back_menu'onClick={closeMenu}/>
             <div className='menu'>
                 <section className='menu_user_section'>
-                   <ButtonsMenu items={items}/>
+                   <ButtonsMenuReactions items={items}/>
                 </section>
                 <section className='menu_admin_section'>
-
+                    <ButtonsMenuActions itemsA={itemsA}/>
                 </section>
                 <section className='menu_page_section'>
-
+                    <ButtonsMenuLinks itemsL={itemsL}/>
                 </section>
             </div>
-        </div>   
+        </motion.div>   
     }
     </nav>
     </>
