@@ -3,8 +3,6 @@
     background-color: black;
     width: 100%;
     height: 40px;
-    position: fixed;
-    z-index: 10;
     .nav_content{
         display: flex;
         justify-content: space-between;
@@ -31,10 +29,9 @@
     .menu_container{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         z-index:3 ;
         top:0;
-        overflow: hidden;
         .back_menu{
             width: 100%;
             height: 100%;
