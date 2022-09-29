@@ -36,9 +36,6 @@
     .icons_menu{
         font-size: calc((0.1rem + 0.1vw) + 5vh);
         color: V.$Ctext;
-        border-bottom: 3px solid transparent;
-        border-image: V.$gradiant;
-        border-image-slice: 1;
         transition: 0.2s;
         cursor: pointer;
         &:hover{
