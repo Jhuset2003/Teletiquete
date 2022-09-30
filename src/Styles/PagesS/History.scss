@@ -1,0 +1,113 @@
+@use "../../App.scss" as V;
+.section_history{
+    height: 100%;
+
+    .history_container{
+        width: 100vw;
+        .user_history{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            gap: 30px;
+            border-bottom: 10px solid transparent;
+            border-image: V.$gradiant;
+            border-image-slice: 1;
+            padding-bottom: 10px;
+            margin: 20px 30px 0px 30px;
+            max-width: 600px;
+            flex-wrap: wrap;
+            .user_history_icon{
+                font-size: 7rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                color: V.$secundary;
+                background-color: black;
+                border-radius: 50%;
+            }
+            .user_History_information{
+                li{
+                    list-style: none;
+                    h2{
+                        color: V.$Csub;
+                    }
+                    span{
+                        color: V.$Ctext;
+                    }
+    
+                }
+            }
+        }
+        .filter_history{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            h2{
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            span{
+                font-weight: 600;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                width: 100%;
+                gap: 40px;
+                li{
+                    gap: 5px;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    select{
+                        border: 2px solid black;
+                        outline: 0;
+                        padding: 6px;
+                        border-radius: 10px;
+                        &:focus{
+                            outline: none;
+                        }
+    
+                    }
+                    input{
+                        border: none;
+                        border-bottom: 3px solid transparent;
+                        border-image: V.$gradiant;
+                        border-image-slice: 1;
+                        &:focus{
+                            outline: none;
+                        }
+                        &[type="date"]::-webkit-calendar-picker-indicator {
+                            margin-left: -10px;
+                            font-size: 20px;
+                          }
+                    }
+                    
+                }
+            }
+        }
+        .history{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+            gap: 30px;
+            overflow-y: scroll;
+            height: 60vh;
+            padding: 20px 0px 20px 0px;
+            scroll-behavior: smooth;
+            &::-webkit-scrollbar{
+                visibility: hidden;
+            }
+        }
+    }
+}

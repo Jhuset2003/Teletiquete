@@ -1,0 +1,25 @@
+@use "../../App.scss" as V;
+.HistoryCardContainer{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px black;
+    ul{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: center;
+        li{
+            list-style: none;
+            &:nth-last-child(1){
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        }
+        
+    }
+}
