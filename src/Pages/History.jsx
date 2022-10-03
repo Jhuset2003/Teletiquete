@@ -9,35 +9,39 @@ const History = () => {
   const items = [
     {
       id:1,
+      estado:"viajo",
       origin:"Bogota D.C",
       destino:"Cartagena",
       empresa:"Autoboy",
-      horas:"10 am " + " 11pm",
-      fechas:"20/09/2022" + "21/09/2022"
+      horas:"10 am" +" - "+ "11 pm",
+      fechas:"20/09/2022" + " - " + "21/09/2022"
     },
     {
       id:2,
+      estado:"noViajo",
       origin:"Bogota D.C",
       destino:"Cartagena",
       empresa:"Autoboy",
-      horas:"10 am " + " 11pm",
-      fechas:"20/09/2022" + "21/09/2022"
+      horas:"10 am" +" - "+ "11 pm",
+      fechas:"20/09/2022" + " - " + "21/09/2022"
     },
     {
       id:3,
+      estado:"vendido",
       origin:"Bogota D.C",
       destino:"Cartagena",
       empresa:"Autoboy",
-      horas:"10 am " + " 11pm",
-      fechas:"20/09/2022" + "21/09/2022"
+      horas:"10 am" +" - "+ "11 pm",
+      fechas:"20/09/2022" + " - " + "21/09/2022"
     },
     {
       id:4,
+      estado:"anulado",
       origin:"Bogota D.C",
       destino:"Cartagena",
       empresa:"Autoboy",
-      horas:"10 am " + " 11pm",
-      fechas:"20/09/2022" + "21/09/2022"
+      horas:"10 am" +" - "+ "11 pm",
+      fechas:"20/09/2022" + " - " + "21/09/2022"
     }
   ]
   return (
@@ -60,8 +64,7 @@ const History = () => {
                   </li>
                 </ul>
              </div>
-        </div>
-        <div className='filter_history'>
+             <div className='filter_history'>
           <h2>Historial viajes</h2>
           <span>Filtrar por:</span>
           <ul>  
@@ -83,6 +86,8 @@ const History = () => {
             </li>
           </ul>
         </div>
+        </div>
+       
         <div className='history'>
           <HistoryCard items={items}/>
         </div>

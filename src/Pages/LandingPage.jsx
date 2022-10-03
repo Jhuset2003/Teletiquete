@@ -14,10 +14,10 @@ import { RiCopyrightLine } from 'react-icons/ri';
 export const LandingPage = () => {
   return (
     <div className='Landing'>
-      <section className='home' id='Home'>
       <section className='nav_container'>
         <Nav/>
       </section>
+      <section className='home' id='Home'>
           <MarginLayout>
               <div className='home_elements_container'>
                   <div className='title_container'>

@@ -10,16 +10,18 @@
         background-position: center;
         background-size: cover;
         overflow-y: hidden;
-        /*
+        position: relative;
+        min-height: 580px;
+        
         .figure_container{
             width: 100%;
             height: 60%;
-            background-color: rgba(0, 114, 118, 0.881);;
+            background-color: rgba(0, 114, 118, 0.765);;
             position: absolute;
             z-index: 1;
             bottom: 0;
             clip-path: polygon(0 29%, 16% 45%, 50% 41%, 77% 28%, 100% 0, 100% 100%, 0 100%);
-        }*/
+        }
         .home_elements_container{
             height: 100%;
             width: 100%;
@@ -59,6 +61,7 @@
             background-position: center;
             background-size: cover;
             overflow-y: hidden;
+            min-height: 580px;
             .information_section_container{
                 .payment_methods{
                     display: flex;
@@ -91,6 +94,7 @@
             justify-content: center;
             align-items: center;
             align-self: center;
+            min-height: 140px;
             .footer{
                 width: 80%;
                 display: grid;
