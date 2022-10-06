@@ -1,0 +1,96 @@
+@use "../../App.scss" as V;
+
+.registroPasajero{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.398);
+    border-top: 1px solid rgba(0, 0, 0, 0.129);
+    border-left: 1px solid rgba(0, 0, 0, 0.129);
+    max-width: 400px;
+    min-width: 300px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .HeaderRegistroPasajero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        span{
+            color: V.$Ctext;
+            font-weight: 600;
+            &:nth-last-child(1){
+                color: V.$Csub;
+            }
+        }
+    }
+    .BodyRegistroPasajero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            li{
+                input{
+                    border: none;
+                    border-bottom: 2px solid transparent;
+                    border-image: V.$gradiant;
+                    border-image-slice: 1;
+                    padding-bottom: 5px;
+                    font-weight: 600;
+                    color: V.$Csub;
+                    font-size: 17px;
+                    width: 130px;
+                    &:focus{
+                        outline: none;
+                    }
+                    &::placeholder{
+                        font-weight: 600;
+                        color: V.$Csub;
+                        padding-left: 10px;
+                        font-size: 15px;
+                    }
+                }
+                margin: 5px 5px 5px 5px;
+                &:nth-last-child(1){
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+    .FooterRegistroPasajero{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 17px 0px 14px 0px;
+        button{
+            background: none;
+            border: none;
+            padding: 7px;
+            font-weight: 700;
+            font-size: 16px;
+            
+        }
+        .Limpiar{
+            background-color: V.$terceary;
+        }
+        .Editar{
+            background-color: V.$secundary;
+        }
+        .Aceptar{
+            background-color: V.$primary;
+        }
+    }
+}

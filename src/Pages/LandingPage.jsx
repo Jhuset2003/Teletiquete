@@ -1,4 +1,3 @@
-import React from 'react'
 import { SearchForm } from '../Components/Forms/SearchForm'
 import { Nav } from '../Components/Nav/Nav'
 import MarginLayout from '../Layouts/MarginLayout'
@@ -8,12 +7,17 @@ import log_teletiquete from "../Resources/Logs/log_teletiquete.jpg";
 import log_aj from "../Resources/Logs/Log_Aj.png"
 
 
+
 import { RiCopyrightLine } from 'react-icons/ri';
 
 
+
+
 export const LandingPage = () => {
+
   return (
     <div className='Landing'>
+      
       <section className='nav_container'>
         <Nav/>
       </section>

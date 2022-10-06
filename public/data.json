@@ -1,0 +1,156 @@
+{
+    "status":"ok",
+    "content":{
+       "ida":[
+          {
+             "tarifa_online":"65,000",
+             "sigla":"$",
+             "fec_salida":"Mar ,Oct 04",
+             "fec_salida_estandar":"2022-10-04",
+             "fec_llegada":"Mie ,Oct 05",
+             "fec_llegada_estandar":"2022-10-05",
+             "hora_salida":"11:50 PM",
+             "hora_salida_estandar":"23:50",
+             "hora_llegada":"04:00 AM",
+             "hora_llegada_estandar":"04:00",
+             "logo":"img\/logos\/cootransbologo2.png",
+             "id_ciudad_origen":"1100101",
+             "id_ciudad_destino":"15759",
+             "nom_ciudad_origen":"BOGOTA NORTE",
+             "nom_ciudad_destino":"SOGAMOSO",
+             "id_empresa":25,
+             "duracion":"4h 10m",
+             "sillas_disponibles":100,
+             "tipo_vehiculo":"BUS",
+             "operacion":333876,
+             "clasificacion":"ESTANDART",
+             "fotos":[
+                
+             ],
+             "servicios":[
+                
+             ]
+          },
+          {
+             "tarifa_online":"40,000",
+             "sigla":"$",
+             "fec_salida":"Mar ,Oct 04",
+             "fec_salida_estandar":"2022-10-04",
+             "fec_llegada":"Mar ,Oct 04",
+             "fec_llegada_estandar":"2022-10-04",
+             "hora_salida":"08:20 PM",
+             "hora_salida_estandar":"20:20",
+             "hora_llegada":"10:40 PM",
+             "hora_llegada_estandar":"22:40",
+             "logo":"img\/logos\/coflologo3.png",
+             "id_ciudad_origen":"1100101",
+             "id_ciudad_destino":"15759",
+             "nom_ciudad_origen":"BOGOTA NORTE",
+             "nom_ciudad_destino":"SOGAMOSO",
+             "id_empresa":12,
+             "duracion":"2h 20m",
+             "sillas_disponibles":100,
+             "tipo_vehiculo":"PREFERENCIAL",
+             "operacion":400016,
+             "clasificacion":"ESTANDART",
+             "fotos":[
+                
+             ],
+             "servicios":[
+                
+             ]
+          },
+          {
+             "tarifa_online":"45,000",
+             "sigla":"$",
+             "fec_salida":"Mar ,Oct 04",
+             "fec_salida_estandar":"2022-10-04",
+             "fec_llegada":"Mar ,Oct 04",
+             "fec_llegada_estandar":"2022-10-04",
+             "hora_salida":"08:50 PM",
+             "hora_salida_estandar":"20:50",
+             "hora_llegada":"11:10 PM",
+             "hora_llegada_estandar":"23:10",
+             "logo":"img\/logos\/coflologo3.png",
+             "id_ciudad_origen":"1100101",
+             "id_ciudad_destino":"15759",
+             "nom_ciudad_origen":"BOGOTA NORTE",
+             "nom_ciudad_destino":"SOGAMOSO",
+             "id_empresa":12,
+             "duracion":"2h 20m",
+             "sillas_disponibles":100,
+             "tipo_vehiculo":"PREFERENCIAL",
+             "operacion":400381,
+             "clasificacion":"ESTANDART",
+             "fotos":[
+                
+             ],
+             "servicios":[
+                
+             ]
+          },
+          {
+             "tarifa_online":"40,000",
+             "sigla":"$",
+             "fec_salida":"Mar ,Oct 04",
+             "fec_salida_estandar":"2022-10-04",
+             "fec_llegada":"Mar ,Oct 04",
+             "fec_llegada_estandar":"2022-10-04",
+             "hora_salida":"09:20 PM",
+             "hora_salida_estandar":"21:20",
+             "hora_llegada":"11:40 PM",
+             "hora_llegada_estandar":"23:40",
+             "logo":"img\/logos\/coflologo3.png",
+             "id_ciudad_origen":"1100101",
+             "id_ciudad_destino":"15759",
+             "nom_ciudad_origen":"BOGOTA NORTE",
+             "nom_ciudad_destino":"SOGAMOSO",
+             "id_empresa":12,
+             "duracion":"2h 20m",
+             "sillas_disponibles":100,
+             "tipo_vehiculo":"PREFERENCIAL",
+             "operacion":400746,
+             "clasificacion":"ESTANDART",
+             "fotos":[
+                
+             ],
+             "servicios":[
+                
+             ]
+          },
+          {
+             "tarifa_online":"40,000",
+             "sigla":"$",
+             "fec_salida":"Mar ,Oct 04",
+             "fec_salida_estandar":"2022-10-04",
+             "fec_llegada":"Mie ,Oct 05",
+             "fec_llegada_estandar":"2022-10-05",
+             "hora_salida":"09:50 PM",
+             "hora_salida_estandar":"21:50",
+             "hora_llegada":"00:10 AM",
+             "hora_llegada_estandar":"00:10",
+             "logo":"img\/logos\/coflologo3.png",
+             "id_ciudad_origen":"1100101",
+             "id_ciudad_destino":"15759",
+             "nom_ciudad_origen":"BOGOTA NORTE",
+             "nom_ciudad_destino":"SOGAMOSO",
+             "id_empresa":12,
+             "duracion":"2h 20m",
+             "sillas_disponibles":100,
+             "tipo_vehiculo":"PREFERENCIAL",
+             "operacion":402206,
+             "clasificacion":"ESTANDART",
+             "fotos":[
+                
+             ],
+             "servicios":[
+                
+             ]
+          }
+       ],
+       "regreso":[
+          
+       ],
+       "teletiquete":true
+    }
+ }

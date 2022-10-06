@@ -1,0 +1,197 @@
+@use "../../../App.scss" as V;
+
+.step2Continer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .headerStep2{
+        width: 90%;
+    padding-bottom: 10px;
+    max-width: 500px;
+    border-bottom: 4px solid transparent;
+    border-image: V.$gradiant;
+    border-image-slice: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 40px;
+    margin-top: 20px;
+    }
+    .bodyStep2{
+        margin-top: 20px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: center;
+        .paintBus{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .infoBus{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .avisos{
+                ul{
+                    list-style: none;
+                    li{
+                        margin-top: 5px;
+                        display: flex;
+                        align-items: center;
+                        align-self: center;
+                        gap: 10px;
+                        font-size: calc(10px + 0.7vw);
+                        div{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 5px;
+                        }
+                       &:nth-last-child(3){
+                        div{
+                            background-color: V.$primary;
+                         
+                        }
+                       }
+                       &:nth-last-child(2){
+                        div{
+                            background-color: V.$terceary;
+                         
+                        }
+                       }
+                       &:nth-last-child(1){
+                        div{
+                            background-color: V.$secundary;
+                            
+                        }
+                       }
+                       span{
+                        display: flex;
+                        flex-direction: column ;
+                        h4{
+                            color: V.$Csub;
+                        }
+                        span{
+                            color: V.$Ctext;
+                            font-weight: 700;
+                        }
+                       }
+                    }
+                    }
+                }
+            }
+            .service{
+                margin-top: 30px;
+                h2{
+                    font-size: calc(12px + 0.7vw);
+                    color: V.$Csub;
+                }
+            }
+            .acompañantes{
+                h2{
+                    font-size: calc(12px + 0.7vw);
+                    color: V.$Csub; 
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                align-self: center;
+                .asignar{
+                    background: none;
+                    border: none;
+                    width: 100px;
+                    background-color: aqua;
+                    padding: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    border-radius: 10px;
+                    margin: 25px 0px 30px 0px;
+                }
+                .todoAMiNombre{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+                    align-items: center;
+                    text-align: center;
+                    width: 100px;
+                    span{
+                        font-weight: 600;
+                    }
+                    input{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                .registroPasajeroContainer{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.53);
+                    width: 100vw;
+                    height: 100vh;
+                    top: 0;
+                    left: 0;
+                    z-index: 12;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .Pasajeros{
+                        background-color: white;
+                        width: 90vw;
+                        height: 95vh;
+                        border-radius: 15px;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .closePasajeros{
+                            position: absolute;
+                            right: -2%;
+                            top: -1%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: none;
+                            border: none;
+                            font-size: 50px;
+                            background-color: white;
+                            border-radius: 50%;
+                            color: red;
+                        }
+                        .headerPasajero{
+                            margin-top: 30px;
+                            width: 80%;
+                            h2{
+                                color: V.$Ctext;
+                                border-bottom: 4px solid transparent;
+                                border-image: V.$gradiant;
+                                border-image-slice:1 ;
+                                width: 30%;
+                                text-align: center;
+                                min-width: 100px;
+                                padding-bottom: 5px;
+                            }
+
+                        }
+                        .bodyPasajero{
+                            padding: 10px;
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 77vh;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            overflow-y: scroll;
+                            &::-webkit-scrollbar{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

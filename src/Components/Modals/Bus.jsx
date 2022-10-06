@@ -1,10 +1,20 @@
 import React from 'react';
 import "../../Styles/Modals/Bus.scss";
 
-export const Bus = () => {
+import { Step1 } from './Steps/Step1';
+import { Step2 } from './Steps/Step2';
+
+export const Bus = ({datos=[],step={}}) => {
   return (
     <div className='BusSteaps_container' >
-
+      <div className="StepsContainer">
+          <div className='steps'>
+            {step === 1 ? <Step1 /> : ""}
+            {step === 2 ? <Step2/> : ""}
+            {step === 3 ? "3" : ""}
+          </div>
+          
+      </div>
     </div>
   )
 }

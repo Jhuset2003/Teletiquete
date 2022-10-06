@@ -1,0 +1,131 @@
+@use "../../../App.scss" as V;
+
+.origenDestino{
+    width: 90%;
+    padding-bottom: 10px;
+    max-width: 500px;
+    border-bottom: 4px solid transparent;
+    border-image: V.$gradiant;
+    border-image-slice: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 40px;
+    margin-top: 20px;
+
+    i{
+        font-size: calc(3rem + 0.8vw );
+        display: flex;
+        align-self: center;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+        color: V.$Csub;
+        justify-content: center;
+        align-items: center;
+        font-size: calc(1rem + 0.5vw );
+        font-weight: 700;
+        h2{
+            color: V.$Ctext;
+        }
+    }
+}
+.filtros{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    .filtroSearch{
+        overflow-x: scroll;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                h3{
+                    font-size: 20px;
+                    color: V.$Csub;
+                    font-weight: 500;
+                    
+                }
+                .caja{
+                    
+                    border:1px solid #d9d9d9;
+                    height:25px;
+                    width: 100px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    position:relative;
+                    &::after{
+                        content:"\025be";
+                        right: 0px;
+                        display:table-cell;
+                        text-align:center;
+                        padding-top:0px;
+                        width:35px;
+                        height:30px;
+                        background-color:#d9d9d9;
+                        position:absolute;
+                        top:0;
+                        right:0px;
+                        pointer-events: none;
+                        
+                    }
+                    select{
+                        background: transparent;
+                        border: none;
+                        font-size: 11px;
+                     
+                        padding: 5px;
+                        width: 100px;
+                        font-weight: 600;
+                        border-radius: 10px;
+                        &:focus{
+                            outline: none;
+                            
+                        }
+                    }
+                }
+            }
+
+            
+        }
+    }
+    .filtroService{
+        margin-top: 20px;
+        h3{
+            font-weight: 600;
+            color: V.$Csub;
+        }
+        ul{
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+        }
+    }
+}
+.cardContainer{
+    width: 600px;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+}

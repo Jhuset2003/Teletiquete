@@ -15,6 +15,7 @@ export const ButtonsMenuActions = ({itemsA = []}) => {
       const closeHandler = () => {
         setInfo(false);
       };
+      
 
   return (
     <>
