@@ -6,14 +6,15 @@
     flex-direction: column;
     .TimeBusCard{
         display: flex;
-        width: 100%;
+        width: calc(200px + 40vw);
+        max-width: 600px;
+        min-width: 420px;
         background-color: white;
         padding: 10px;
         border-radius: 10px;
         border-bottom: 3px solid rgba(0, 0, 0, 0.263);
         border-right:3px solid rgba(0, 0, 0, 0.263) ;
         align-items: center;
-        align-self: center;
         justify-content: space-between;
         h3{
             color: V.$Csub;
@@ -40,12 +41,13 @@
         width: 80%;
         justify-content: space-between;
         align-items: center;
-        align-self: center;
         background-color: white;
         margin: 15px 0px 15px 0px;
         text-align: center;
         box-shadow: 8px 4px 9px -2px black;
         padding: 10px;
+        min-width: 490px;
+        max-width: 600px;
         
         h3{
             color: V.$Csub;
@@ -59,4 +61,9 @@
     .active{
         box-shadow: 8px 4px 9px -2px red;
     }
+}
+@media (min-width:510px ) {
+   .TimeBusCardContainer{
+    align-items: center;
+   } 
 }

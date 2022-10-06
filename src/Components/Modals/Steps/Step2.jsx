@@ -65,7 +65,7 @@ export const Step2 = () => {
                             <div className='Pasajeros'>
                                 <button onClick={() =>{setPasajeros(!pasajeros)}} className="closePasajeros"><IoIosCloseCircle/></button>
                                 <div className="headerPasajero">
-                                    <h2>Hola</h2>
+                                    <h2>Pasajeros</h2>
                                 </div>
                                 <div className="bodyPasajero">
                                     <Passengers/>

@@ -109,8 +109,6 @@
 
 }
 .BusStepsConatiner{
-    width: 100vw;
-    height: 100vh;
     background-color: rgba(255, 255, 255, 0.612);
     top: 0;
     z-index: 10;
@@ -182,7 +180,7 @@
         border-bottom: 2px solid transparent;
         border-image: V.$gradiant;
         border-image-slice: 1;
-        width: 180px;
+        width: 60px;
         font-weight: 700;
         color: V.$Ctext;
         i{

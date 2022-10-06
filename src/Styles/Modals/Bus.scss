@@ -17,8 +17,7 @@
         background-color: white;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        align-self: center;
+        max-width: 1600px;
+        max-height: 1080px;
     }
 }
