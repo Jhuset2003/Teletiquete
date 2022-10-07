@@ -6,9 +6,9 @@
     flex-direction: column;
     .TimeBusCard{
         display: flex;
-        width: calc(150px + 40vw);
+        width: calc(100px + 40vw);
         max-width: 600px;
-        min-width: 380px;
+        min-width: 330px;
         background-color: white;
         padding: 10px;
         border-radius: 10px;
@@ -70,7 +70,7 @@
         box-shadow: 8px 4px 9px -2px red;
     }
 }
-@media (min-width:410px ) {
+@media (min-width:385px ) {
    .TimeBusCardContainer{
     align-items: center;
    } 

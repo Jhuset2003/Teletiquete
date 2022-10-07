@@ -97,8 +97,20 @@ export const Step3 = () => {
             </div>
         </div>
         <div className='seguros'>
-            <input type="checkbox" name="" id="" />
-            <input type="checkbox" name="" id="" />
+            <div>
+                <span>
+                    <span>seguro</span>
+                    <h3>Pasajero</h3>
+                </span>
+                <input type="checkbox" name="" id="" />
+            </div>
+            <div>
+                <span>
+                    <span>seguro</span>
+                    <h3>Reembolso</h3>
+                </span>
+                <input type="checkbox" name="" id="" />
+            </div>
         </div>
     </div>
   )
