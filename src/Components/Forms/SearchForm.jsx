@@ -91,13 +91,15 @@ export const SearchForm = () => {
         <div className='BusStepsConatiner'>
             <button onClick={() => {closeBusSteps(); setSteps(1)}} style={{zIndex:11}} className="stopSteps"><AiFillCloseCircle/></button>
             <Bus datos={datos} step={steps} setSteps={setSteps}/>
-            <button style={{zIndex:11}} onClick={() => {setSteps(steps + 1)}} className="next" disabled={false}><i><MdPlayArrow/></i></button>
-            <div className='progressBar' style={{zIndex:11}}>
-                <ul>
-                    <li className={`${steps >= 1 ? "active" : "" }`} onClick={() => {setSteps(1)}}><BiTimer/></li>
-                    <li className={`${steps >= 2 ? "active" : "" }`} onClick={() => {setSteps(2)}}><FaBusAlt/></li>
-                    <li className={`${steps >= 3 ? "active" : "" }`} onClick={() => {setSteps(3)}}><FaFileInvoiceDollar/></li>
-                </ul>
+            <div className='nextAndProgressBar'>
+                <button style={{zIndex:11}} onClick={() => {setSteps(steps + 1)}} className="next" disabled={false}><i><MdPlayArrow/></i></button>
+                <div className='progressBar' style={{zIndex:11}}>
+                    <ul>
+                        <li className={`${steps >= 1 ? "active" : "" }`} onClick={() => {setSteps(1)}}><BiTimer/></li>
+                        <li className={`${steps >= 2 ? "active" : "" }`} onClick={() => {setSteps(2)}}><FaBusAlt/></li>
+                        <li className={`${steps >= 3 ? "active" : "" }`} onClick={() => {setSteps(3)}}><FaFileInvoiceDollar/></li>
+                    </ul>
+                </div>
             </div>
         </div>
     }

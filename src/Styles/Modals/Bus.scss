@@ -8,6 +8,7 @@
     overflow: scroll;
     min-height: 275px;
     padding-top: 18px;
+    padding-bottom: 18px;
 
     .steps{
         display: contents;
@@ -20,6 +21,6 @@
         flex-direction: column;
         max-width: 1600px;
         max-height: 1080px;
-        min-height: 600px;
+        min-height: 644px;
     }
 }
